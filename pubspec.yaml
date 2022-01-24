@@ -14,8 +14,6 @@ dependencies:
 
   cupertino_icons: ^1.0.2
   #payment
-  stripe_payment:
-  flutter_credit_card:
   http:
   get:
   url_launcher:
