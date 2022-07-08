@@ -55,6 +55,7 @@ class StripeBackendService {
   static Future<CreateAccountResponse> createSellerAccount() async {
     var url = Uri.parse(StripeBackendService.createAccountUrl);
     var response = await http.get(url, headers: StripeBackendService.headers);
+    print(response);
     Map<String, dynamic> body = jsonDecode(response.body);
     return CreateAccountResponse(body['url'], true);
   }

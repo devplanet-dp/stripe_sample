@@ -32,12 +32,21 @@ class HomeScreen extends StatelessWidget {
             const SizedBox(
               height: 10,
             ),
+            // _SelectionCard(
+            //     title: 'Test deeplink',
+            //     onTapped: () => _openLink()),
           ],
         ),
       ),
     );
   }
 
+  _openLink()async{
+    var url = "https://stripe-connect-backend-omega.vercel.app/register-mobile?result=success";
+    await canLaunch(url)
+        ? await launch(url)
+        : throw 'Could not launch URL';
+  }
   _registerDriver(BuildContext context) async {
     ProgressDialog pd = ProgressDialog(context: context);
     pd.show(
