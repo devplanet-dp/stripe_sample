@@ -6,7 +6,7 @@ import 'package:webview_flutter/webview_flutter.dart';
 
 String checkoutSuccessUrl = '$BACKEND_HOST/pay-out-mobile?result=success';
 String checkoutFailureUrl = '$BACKEND_HOST/pay-out-mobile?result=failure';
-String stripePublicKey = 'pk_test_51JJLFfLduuinRJdeTT6oCf4fNrSPikjxusFtlhP1exrlISv4FxA5m6jou0ORKvf0B2eY3McPHb4Nsj9d2ke9Cjb900H5LQ0t31';
+String stripePublicKey = 'pk_test_51LEvPbIT4NZnz4DGYXNC7YLztPWHhJs4ipF4hGJCAuwsWTA0NE02xuzqMKAkiTVexRHqw3QFCOM70crZC3dIoVoS00RUOGtE5u';
 
 const stripeHtmlPageScaffold = '''
   <!DOCTYPE html>
