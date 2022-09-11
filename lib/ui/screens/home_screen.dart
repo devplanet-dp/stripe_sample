@@ -28,7 +28,7 @@ class HomeScreen extends StatelessWidget {
             ),
             _SelectionCard(
                 title: 'Register driver',
-                onTapped: () => _registerDriver(context)),
+                onTapped: () => _openLink()),
             const SizedBox(
               height: 10,
             ),
